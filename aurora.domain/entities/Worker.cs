@@ -6,7 +6,7 @@ using System.Collections.Generic;
 
 namespace Aurora.Domain.Entities
 {
-    public class Worker : BaseEntity<int>
+    public class Worker : BaseEntity<int>//regras de validação
     {
         public Worker(int id, Name name, DateTime birthDate, Nin nin, Password password) : base(id)
         {

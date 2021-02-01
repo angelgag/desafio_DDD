@@ -3,7 +3,7 @@ using Aurora.Domain.Entities;
 
 namespace Aurora.Domain.Interfaces
 {
-    public interface IRepositoryWorker
+    public interface IRepositoryWorker // interface do repositorio do trabalhador
     {
         void Save(Worker obj);
 

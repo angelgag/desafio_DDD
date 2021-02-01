@@ -7,7 +7,7 @@ using Infra.Shared.Mapper;
 
 namespace Aurora.Service.Services
 {
-    public class WorkerService : IServiceWorker
+    public class WorkerService : IServiceWorker // implementa os metodos da interface iservicework 
     {
         private readonly IRepositoryWorker _repositoryUser;
         private readonly NotificationContext _notificationContext;

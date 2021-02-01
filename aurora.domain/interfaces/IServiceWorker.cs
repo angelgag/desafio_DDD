@@ -3,7 +3,7 @@ using Aurora.Domain.Models;
 
 namespace Aurora.Domain.Interfaces
 {
-    public interface IServiceWorker
+    public interface IServiceWorker // interface dos serviços do trabalhador
     {
         WorkerModel Insert(CreateWorkerModel userModel);
 

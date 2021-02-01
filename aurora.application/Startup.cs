@@ -13,9 +13,14 @@ namespace Aurora.Application
         public Startup(IConfiguration configuration) =>
             Configuration = configuration;
 
+        /*public Startup(IConfiguration configuration)
+        {
+            this.Configuration = configuration;
+
+        }*/
         public IConfiguration Configuration { get; }
 
-        public void ConfigureServices(IServiceCollection services)
+        public void ConfigureServices(IServiceCollection services) // injetar interfaces 
         {
             services.AddMvc(config =>
             {

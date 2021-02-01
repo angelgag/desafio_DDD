@@ -15,7 +15,7 @@ namespace Aurora.Application.Controllers
             _serviceUser = serviceUser;
 
 
-        [HttpPost]
+        [HttpPost] // criar novo registro
         public IActionResult Register([FromBody] CreateWorkerModel userModel)
         {
             try
@@ -30,7 +30,7 @@ namespace Aurora.Application.Controllers
             }
         }
 
-        [HttpPut("{id}")]
+        [HttpPut("{id}")] // atualizar registro 
         public IActionResult Update([FromRoute] int id, [FromBody] UpdateWorkerModel userModel)
         {
             try
@@ -45,7 +45,7 @@ namespace Aurora.Application.Controllers
             }
         }
 
-        [HttpDelete("{id}")]
+        [HttpDelete("{id}")] // deletar regist
         public IActionResult Remove([FromRoute] int id)
         {
             try
@@ -60,7 +60,7 @@ namespace Aurora.Application.Controllers
             }
         }
 
-        [HttpGet]
+        [HttpGet] // extibir todos registros
         public IActionResult RecoverAll()
         {
             try
@@ -74,7 +74,7 @@ namespace Aurora.Application.Controllers
             }
         }
 
-        [HttpGet("{id}")]
+        [HttpGet("{id}")] // exibir registro especifico 
         public IActionResult Recover([FromRoute] int id)
         {
             try
